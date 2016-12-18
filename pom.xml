@@ -6,7 +6,12 @@
 	<groupId>org.springframework</groupId>
 	<artifactId>gs-serving-web-content</artifactId>
 	<version>0.1.0</version>
-
+	<description>Jimmy's java study project</description>
+	<url>http://www.jimmy.com</url>
+	<organization>
+		<name>Jimmy Software, Inc.</name>
+		<url>http://www.jimmy.com</url>
+	</organization>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -41,6 +46,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -55,6 +61,14 @@
 			<artifactId>jackson-core</artifactId>
 		</dependency>
 		<!-- XML processing - END -->
+
+		<!-- Apache Common library -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<!-- Apache Common library - END -->
 
 		<!-- Time processing -->
 		<dependency>

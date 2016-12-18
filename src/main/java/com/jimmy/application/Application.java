@@ -19,7 +19,7 @@ import com.jimmy.domain.Student;
 import com.jimmy.service.StudentRepository;
 
 @SpringBootApplication
-@PropertySource("classpath:/appProp.properties")
+@PropertySource("classpath:/jimmyProp.properties")
 //@ComponentScan(basePackageClasses = GreetingController.class)
 @ComponentScan("com.jimmy")
 @EnableJpaRepositories("com.jimmy")
@@ -31,9 +31,6 @@ public class Application {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(Application.class);
-	
-    @Autowired
-    private StudentRepository studentRepository;
 	
 	@Bean
 	protected RestTemplate resetTemplate() { 
@@ -48,17 +45,17 @@ public class Application {
 	
 	@PostConstruct
 	public void logSomething() {
-		Student s = new Student();
-		s.setName("Jimmy");
-		s.setSex("Male");
-		s.setNickName("Jimbo");
-		studentRepository.save(s);
-		
-		Student s2 = new Student();
-		s2.setName("Angel");
-		s2.setSex("Female");
-		s2.setNickName("Angela");
-		studentRepository.save(s2);
+//		Student s = new Student();
+//		s.setName("Jimmy");
+//		s.setSex("Male");
+//		s.setNickName("Jimbo");
+//		studentRepository.save(s);
+//		
+//		Student s2 = new Student();
+//		s2.setName("Angel");
+//		s2.setSex("Female");
+//		s2.setNickName("Angela");
+//		studentRepository.save(s2);
 		
 		
 		logger.debug("Sample Debug Message");

@@ -23,6 +23,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.jimmy.application.Application;
@@ -50,6 +54,17 @@ public class CurdRepositoryTest {
     public void getStudentsBySex(){
     	List<Student> result = studentRepository.findBySex("Male");
     	System.out.println("getStudentsBySex():"+result);
+    }
+    
+    @Test
+    public void getAllByPage(){
+		Pageable pageable = new PageRequest(0, 2);
+		Page<Student> page = studentRepository.findAll(pageable);
+//		Iterator<Student> students = page.iterator();
+		for (Student student : page) {
+			System.out.println("student:"+student.getName());
+		}
+    	
     }
 
 }

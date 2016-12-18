@@ -1,11 +1,19 @@
 package com.jimmy.domain;
 
 import java.io.Serializable;
+import java.sql.Clob;
+import java.util.Calendar;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 @Entity
 public class Student implements Serializable{
@@ -22,17 +30,43 @@ public class Student implements Serializable{
 	@Column(nullable = false)
 	private String sex;
 
-	@Column(nullable = true)
+	@Column(name="NICKNAME", nullable = true)
 	private String nickName;
 	
+	@Column
+	private Clob selfDescription;
+	
+	@Column
+	private Calendar BirthDate;
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy="student")
+	private List<Address> addresses;
+	
+	public Calendar getBirthDate() {
+		return BirthDate;
+	}
+
+	
+	
+	public void setBirthDate(Calendar birthDate) {
+		BirthDate = birthDate;
+	}
+
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
+	}
+
 	public Student() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return ToStringBuilder.reflectionToString(this);
 	}
 	
 	public String getName() {

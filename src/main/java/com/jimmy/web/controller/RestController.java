@@ -1,5 +1,6 @@
 package com.jimmy.web.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +25,7 @@ import com.jimmy.domain.Student;
 import com.jimmy.service.StudentRepository;
 
 @Controller
-public class GreetingController {
+public class RestController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
@@ -33,7 +34,7 @@ public class GreetingController {
     private StudentRepository studentRepository;
 	
 	private static final Logger logger = LoggerFactory
-			.getLogger(GreetingController.class);
+			.getLogger(RestController.class);
 
 	@RequestMapping("/greeting")
 	public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name,
@@ -101,14 +102,19 @@ public class GreetingController {
 	 */
 	@RequestMapping(path="/findStudentByName", method=RequestMethod.GET)
 	public ResponseEntity<List<Student>> findStudentByName(@RequestParam(value = "name", required = true) String name){
-		
-//		Student student = new Student();
-//		student.setId(123L);
-//		student.setName("Jimmy");
-//		student.setSex("Male");
-//		student.setNickName("JimBo");
 		List<Student> students = studentRepository.findByName(name);
 		return new ResponseEntity<List<Student>>(students, HttpStatus.OK);
+	}
+	
+	@RequestMapping(path="/findAllStudents", method=RequestMethod.GET)
+	public ResponseEntity<List<Student>> findStudentByName(){
+		 Iterable<Student> students = studentRepository.findAll();
+		 List<Student> result = new ArrayList<Student>();
+		for (Student student : students) {
+			result.add(student);
+		}
+		
+		return new ResponseEntity<List<Student>>(result, HttpStatus.OK);
 	}
 	
 

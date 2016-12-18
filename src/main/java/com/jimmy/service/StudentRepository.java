@@ -2,6 +2,8 @@ package com.jimmy.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 
 import com.jimmy.domain.Student;
@@ -15,5 +17,7 @@ public interface StudentRepository extends CrudRepository<Student, Long> {
 	List<Student> findByName(String name);
 	
 	List<Student> findBySex(String sex);
+	
+	Page<Student> findAll(Pageable pageable);
 
 }

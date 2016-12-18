@@ -37,7 +37,7 @@ import com.jimmy.service.StudentRepository;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 @AutoConfigureMockMvc
-public class GreetingControllerTest {
+public class RestControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
