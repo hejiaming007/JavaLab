@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-package hello;
+package com.jimmy.web.controller;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+
+import java.util.Iterator;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,14 +30,18 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.jimmy.application.Application;
+import com.jimmy.domain.Student;
+import com.jimmy.service.StudentRepository;
+
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = Application.class)
 @AutoConfigureMockMvc
-public class ApplicationTest {
+public class GreetingControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
+    
     @Test
     public void homePage() throws Exception {
         // N.B. jsoup can be useful for asserting HTML content
@@ -54,5 +60,6 @@ public class ApplicationTest {
         mockMvc.perform(get("/greeting").param("name", "Greg"))
                 .andExpect(content().string(containsString("Hello, Greg!")));
     }
+
 
 }
