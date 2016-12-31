@@ -34,7 +34,7 @@ public class Application {
 	
 	@Bean
 	protected RestTemplate resetTemplate() { 
-		System.out.println("beanName:"+beanName);
+		System.out.println("Property name:"+beanName);
 		return new RestTemplate() {
 		};
 	}

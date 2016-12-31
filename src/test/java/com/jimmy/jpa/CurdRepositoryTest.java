@@ -43,7 +43,7 @@ public class CurdRepositoryTest {
     @Test
     public void testGetAllStudent(){
 		Iterable<Student> list = studentRepository.findAll();
-		System.out.println("list:"+list);
+//		System.out.println("list:"+list);
 		Iterator<Student> itr = list.iterator();
 		while(itr.hasNext()){
 			System.out.println("id:"+itr.next().getId());
@@ -53,7 +53,8 @@ public class CurdRepositoryTest {
     @Test
     public void getStudentsBySex(){
     	List<Student> result = studentRepository.findBySex("Male");
-    	System.out.println("getStudentsBySex():"+result);
+    	System.out.println(result.size());
+//    	System.out.println("getStudentsBySex():"+result);
     }
     
     @Test

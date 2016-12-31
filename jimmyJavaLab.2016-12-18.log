@@ -1,0 +1,45 @@
+2016-12-18 21:49:05,760 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 5392 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 21:49:05,761 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 21:49:05,761 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 21:49:06,292 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 21:49:06,492 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 0.773 seconds (JVM running for 6411.101)
+2016-12-18 21:49:14,519 INFO [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:48] Starting CurdRepositoryTest on Jimmys-MacBook-Pro.local with PID 6474 (started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 21:49:14,524 DEBUG [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 21:49:14,524 INFO [main] c.j.j.CurdRepositoryTest [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 21:49:18,265 DEBUG [main] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 21:49:19,930 INFO [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:57] Started CurdRepositoryTest in 5.973 seconds (JVM running for 6.717)
+2016-12-18 22:04:42,764 INFO [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:48] Starting CurdRepositoryTest on Jimmys-MacBook-Pro.local with PID 6688 (started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 22:04:42,767 DEBUG [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 22:04:42,777 INFO [main] c.j.j.CurdRepositoryTest [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 22:04:46,518 DEBUG [main] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 22:04:48,185 INFO [main] c.j.j.CurdRepositoryTest [StartupInfoLogger.java:57] Started CurdRepositoryTest in 5.985 seconds (JVM running for 6.747)
+2016-12-18 22:04:58,328 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 6691 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 22:04:58,346 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 22:04:58,347 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 22:05:39,197 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 6697 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 22:05:39,201 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 22:05:39,202 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 22:06:14,940 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 6703 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 22:06:14,945 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 22:06:14,946 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 22:06:19,076 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 22:06:20,654 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 6.22 seconds (JVM running for 6.908)
+2016-12-18 22:08:56,218 DEBUG [http-nio-8080-exec-3] c.j.w.c.RestController [RestController.java:43] restTemplate:com.jimmy.application.Application$1@1a008c8f
+2016-12-18 22:08:56,222 DEBUG [http-nio-8080-exec-3] c.j.w.c.RestController [RestController.java:44] studentRepository:org.springframework.data.jpa.repository.support.SimpleJpaRepository@3413dcc8
+2016-12-18 22:10:44,081 DEBUG [http-nio-8080-exec-1] c.j.w.c.RestController [RestController.java:43] restTemplate:com.jimmy.application.Application$1@1a008c8f
+2016-12-18 22:10:44,082 DEBUG [http-nio-8080-exec-1] c.j.w.c.RestController [RestController.java:44] studentRepository:org.springframework.data.jpa.repository.support.SimpleJpaRepository@3413dcc8
+2016-12-18 22:25:57,965 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 7248 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 22:25:57,972 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 22:25:57,972 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 22:26:02,500 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 22:26:04,060 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 6.731 seconds (JVM running for 7.473)
+2016-12-18 23:16:45,481 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 7818 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 23:16:45,494 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 23:16:45,496 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 23:16:49,665 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 23:16:51,318 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 6.323 seconds (JVM running for 7.08)
+2016-12-18 23:37:02,183 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 7818 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-18 23:37:02,184 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-18 23:37:02,184 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-18 23:37:03,087 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-18 23:37:03,501 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 1.545 seconds (JVM running for 1219.264)

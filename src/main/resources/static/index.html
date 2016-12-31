@@ -1,32 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <title>Getting Started: Serving Web Content</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+
+<title>Jimmy Java Lab</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+
+</style>
 </head>
+
 <body>
-	<script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <div class='header'>
-    	<h1>Jimmy's Java Study Lab</h1>
-    </div>
-	<div class='container'>
-		<h1>Test Lab home page</h1>
-	    <p>Get your greeting <a href="/greeting">here</a></p>
-	    <p>Greeting :<a href="/greeting2">here</a></p> 
-	    <p><a href="/elasticHealth">Check Elastic Search Health</a></p> 
-	    <p><a href="/errorMaker">Error maker</a></p> 
-	    <p><a href="/errorMaker404">404 Error maker</a></p> 
-	    <p><a href="/h2-console">H2 Console</a></p> 
-	    
-    </div>
-    <i class="icon-search"></i>
-    <div class='footer'>
-    	<div class='container'>
-    		<p>Footer</p>
-    	</div>
-    </div>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Welcome</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control">
+					</div>
+					<button type="submit" class="btn btn-success">Sign in</button>
+				</form>
+			</div>
+			<!--/.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>欢迎来到Jimmy的Java实验室!</h1>
+			<p>This is a quick reference project for some Java technology</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="#" role="button">Learn
+					more &raquo;</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-4">
+				<h2>H2 Console</h2>
+				<p>Access H2 database to cehck DB record</p>
+				<p>
+					<a class="btn btn-default" href="#" role="button">Access
+						console &raquo;</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Rest API</h2>
+				<p>
+					Get your greeting <a href="/greeting">here</a>
+				</p>
+				<p>
+					Greeting :<a href="/greeting2">here</a>
+				</p>
+				<p>
+					<a href="/elasticHealth">Check Elastic Search Health</a>
+				</p>
+				<p>
+					<a href="/errorMaker">Error maker</a>
+				</p>
+				<p>
+					<a href="/errorMaker404">404 Error maker</a>
+				</p>
+		
+			</div>
+			<div class="col-md-4">
+				<h2>Others</h2>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+					egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+					nibh, ut fermentum massa justo sit amet risus.</p>
+				<p>
+					<a class="btn btn-default" href="#" role="button">View details
+						&raquo;</a>
+				</p>
+			</div>
+		</div>
+
+		<hr>
+
+		
+	</div>
+	<!-- /container -->
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">&copy; 2016 Jimmy Company, Inc.</p>
+		</div>
+		</footer>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
