@@ -62,3 +62,8 @@
 2016-12-31 11:36:59,732 DEBUG [main] c.j.a.Application [Application.java:61] Sample Debug Message
 2016-12-31 11:36:59,733 TRACE [main] c.j.a.Application [Application.java:62] Sample Trace Message
 2016-12-31 11:37:01,277 INFO [main] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 6.351 seconds (JVM running for 6.968)
+2016-12-31 11:48:12,497 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:48] Starting Application on Jimmys-MacBook-Pro.local with PID 26661 (/Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete/target/classes started by jimmy in /Users/jimmy/Workspaces/stsWorkspace/gs-serving-web-content/gs-serving-web-content/complete)
+2016-12-31 11:48:12,507 DEBUG [restartedMain] c.j.a.Application [StartupInfoLogger.java:51] Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2016-12-31 11:48:12,509 INFO [restartedMain] c.j.a.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-12-31 11:48:18,118 DEBUG [restartedMain] c.j.a.Application [Application.java:61] Sample Debug Message
+2016-12-31 11:48:20,487 INFO [restartedMain] c.j.a.Application [StartupInfoLogger.java:57] Started Application in 8.646 seconds (JVM running for 9.538)
